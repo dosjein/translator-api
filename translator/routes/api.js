@@ -31,7 +31,7 @@ router.get('/v1/translate', function(req, res, next) {
 		    console.log(resolved.from.text.didYouMean);
 
 			returnVal['status'] = 1;
-			returnVal['translated_text'] = resolved.from.text.value;
+			returnVal['translated_text'] = resolved.text;
 			returnVal['error'] = 'none';
 			if (resolved.from.text.autoCorrected){
 				returnVal['did_you_mean'] = resolved.from.text.didYouMean;
