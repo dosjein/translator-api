@@ -3,6 +3,9 @@
 * Thanks
 [matheuss](https://github.com/matheuss/google-translate-api)
 
+*I Realte stuff to
+[Translation Tool](https://trello.com/c/HPro29Y6/18-translator-tool)
+
 **API Documentation**
 
 
@@ -22,11 +25,11 @@
 
    **Required:**
  
-   `language=[string]`
+   `language_from=[string]`
 
    `language_to=[string]`
 
-   `text=[string]`
+   `translate_text=[string]`
 
 * **Data Params**
 
@@ -46,7 +49,7 @@
 
   ```javascript
     $.ajax({
-      url: "/api/v1/translate?language=eng&language_to=rus&text=junk",
+      url: "/api/v1/translate?language_from=eng&language_to=rus&translate_text=junk",
       dataType: "json",
       type : "GET",
       success : function(r) {
