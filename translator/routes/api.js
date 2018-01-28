@@ -12,11 +12,11 @@ router.get('/v1/translate', function(req, res, next) {
 	languageTo = 'en';
 
 	if (req.query.language_from){
-		languageFrom = req.query.web_hook_url;
+		languageFrom = req.query.language_from;
 	}
 
 	if (req.query.language_to){
-		languageTo = req.query.languageTo;
+		languageTo = req.query.language_to;
 	}
 
 	if (req.query.translate_text){
@@ -30,6 +30,7 @@ router.get('/v1/translate', function(req, res, next) {
 
 			returnVal['status'] = 1;
 			returnVal['translated_text'] = resolved.from.text.value;
+			returnVal['error'] = 'none';
 			if (resolved.from.text.autoCorrected){
 				returnVal['did_you_mean'] = resolved.from.text.didYouMean;
 			}

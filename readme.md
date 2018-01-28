@@ -49,7 +49,7 @@
 
   ```javascript
     $.ajax({
-      url: "/api/v1/translate?language_from=eng&language_to=rus&translate_text=junk",
+      url: "/api/v1/translate?language_from=en&language_to=ru&translate_text=junk",
       dataType: "json",
       type : "GET",
       success : function(r) {
