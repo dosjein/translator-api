@@ -38,7 +38,7 @@
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** `{"status":1 , "translated_text" : "My English is bad"}`
+    **Content:** `{"status":1,"error":"none","translated_text":"\"Привет, меня зовут\""}`
  
 * **Error Response:**
 
@@ -49,7 +49,7 @@
 
   ```javascript
     $.ajax({
-      url: "/api/v1/translate?language_from=en&language_to=ru&translate_text=junk",
+      url: "/api/v1/translate?language_from=en&language_to=ru&translate_text='hello my name'",
       dataType: "json",
       type : "GET",
       success : function(r) {
