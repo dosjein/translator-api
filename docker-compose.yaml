@@ -3,7 +3,7 @@ services:
     translator:
         image: node
         ports:
-            - 3010:3010
+            - 8687:8687
         volumes:
              - ./translator:/opt/translator
              - ./run.sh:/opt/run.sh
