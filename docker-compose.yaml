@@ -1,0 +1,9 @@
+version: '2'
+services:
+    translator:
+        image: node
+        ports:
+            - 3010:3000
+        volumes:
+             - ./translator:/opt/translator
+        command: ["sleep","infinity"]
