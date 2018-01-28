@@ -6,9 +6,9 @@
 **API Documentation**
 
 
-**Request Scrape Work**
+**Translate**
 ----
-  Reguest scrape Url.
+  Translate text.
 
 * **URL**
 
