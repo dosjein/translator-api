@@ -21,6 +21,8 @@ router.get('/v1/translate', function(req, res, next) {
 
 	if (req.query.translate_text){
 		translate(req.query.translate_text, {from: languageFrom, to: languageTo}).then(resolved => {
+		   
+			console.log(resolved);
 		    //=> Ik spea Nederlands!
 		    console.log(resolved.from.text.autoCorrected);
 		    //=> false
