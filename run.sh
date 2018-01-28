@@ -1,3 +1,3 @@
 #!/bin/bash
 
-node --harmony /opt/translator/app.js
+node --harmony /opt/translator/bin/www
