@@ -1,0 +1,7 @@
+version: '2'
+services:
+    translator:
+        image: shivergard/translator
+        ports:
+            - 8687:8687
+        command: ["/opt/run.sh"]
